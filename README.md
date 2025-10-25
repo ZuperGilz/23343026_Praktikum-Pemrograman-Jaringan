@@ -10,9 +10,8 @@ yang disusun oleh mahasiswa **S1 Informatika Universitas Negeri Padang**.
 | Keterangan | Data |
 |-------------|------|
 | **Nama** | 🧑‍💻 Agil Mardian Hawari |
-| **NIM** | 123456789 |
-| **Program Studi** | S1 Informatika |
-| **Fakultas** | Fakultas Matematika dan Ilmu Pengetahuan Alam |
+| **NIM** | 23343026 |
+| **Program Studi** | Informatika |
 | **Universitas** | Universitas Negeri Padang |
 | **Mata Kuliah** | Praktikum Pemrograman Jaringan |
 | **Dosen Pengampu** | [Nama Dosen Pengampu] |
