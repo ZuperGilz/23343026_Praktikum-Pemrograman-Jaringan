@@ -17,10 +17,6 @@ yang disusun oleh mahasiswa **S1 Informatika Universitas Negeri Padang**.
 | **Mata Kuliah** | Praktikum Pemrograman Jaringan |
 | **Dosen Pengampu** | [Nama Dosen Pengampu] |
 
-> ✨ *“Belajar jaringan bukan sekadar menyambungkan kabel, tapi memahami bagaimana setiap bit berpindah dan membentuk sistem yang hidup.”*
-
----
-
 ## 🧠 Daftar JobSheet
 
 | 🔢 No | 📘 Topik JobSheet | 📁 Folder | 🧾 Deskripsi Singkat |
@@ -31,15 +27,3 @@ yang disusun oleh mahasiswa **S1 Informatika Universitas Negeri Padang**.
 | 4 | WebSocket & Real-time Communication | `JobSheet 4 – WebSocket` | Komunikasi data real-time menggunakan **Socket.IO**. |
 | 5 | File Transfer & TCP Socket | `JobSheet 5 – TCP File Transfer` | Membuat aplikasi transfer file sederhana berbasis **TCP Socket**. |
 | 6 | UDP & Broadcasting | `JobSheet 6 – UDP` | Eksperimen komunikasi **broadcast UDP** antar host di jaringan lokal. |
-
-> 📁 **Struktur folder mengikuti format:**  
-> `JobSheet <Nomor> – <Topik JobSheet>`
-
----
-
-## ⚙️ Cara Menjalankan Program
-
-1. **Clone repository ini:**
-   ```bash
-   git clone https://github.com/AgilMardianHawari/123456789_Praktikum-Pemrograman-Jaringan.git
-   cd 123456789_Praktikum-Pemrograman-Jaringan
