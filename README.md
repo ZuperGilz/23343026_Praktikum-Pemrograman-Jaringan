@@ -14,5 +14,5 @@ yang disusun oleh mahasiswa **S1 Informatika Universitas Negeri Padang**.
 | **Program Studi** | Informatika |
 | **Universitas** | Universitas Negeri Padang |
 | **Mata Kuliah** | Praktikum Pemrograman Jaringan |
-| **Dosen Pengampu** | [Nama Dosen Pengampu] |
+| **Dosen Pengampu** | Randi Proska Sandra, S.Pd, M.Sc |
 
