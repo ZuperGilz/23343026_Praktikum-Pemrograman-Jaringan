@@ -1,0 +1,333 @@
+body{
+    color: #333333;
+    font-family: Arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+footer{
+    color: #888888;
+    border-top: 1 px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a{
+    color: #888888;
+    margin-right: 16px;
+    text-decoration:  none;
+}
+
+.portrait{
+    width: 250px;
+}
+
+input{
+    border: 2px solid #cccccc;
+    padding: 8px;
+}
+
+button{
+    cursor: pointer;
+    border: 0px solid #cccccc;
+    background: #888888;
+    color: white;
+    padding: 9px;
+}
+
+/*  */
+/* === ABOUT ME PAGE === */
+.about-me {
+  background: linear-gradient(120deg, #e3f2fd 0%, #ffffff 100%);
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+.profile-left {
+  background: linear-gradient(135deg, #0c4a6e, #1976d2);
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px 20px;
+}
+
+.profile-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo img:hover {
+  transform: scale(1.05);
+}
+
+.social-links {
+  margin-top: 25px;
+  display: flex;
+  gap: 18px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffd166;
+  transform: scale(1.2);
+}
+
+.profile-right {
+  flex: 2 1 400px;
+  padding: 40px 50px;
+}
+
+.name {
+  font-size: 32px;
+  color: #0c4a6e;
+  margin-bottom: 8px;
+}
+
+.name span {
+  color: #1976d2;
+}
+
+.role {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.bio {
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.skills h3 {
+  margin-top: 30px;
+  color: #0c4a6e;
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li {
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 16px;
+}
+
+.skills i {
+  color: #1976d2;
+  margin-right: 8px;
+}
+
+.quote {
+  background: #f5faff;
+  border-left: 4px solid #1976d2;
+  padding: 12px 18px;
+  margin-top: 30px;
+  border-radius: 6px;
+  font-style: italic;
+  text-align: center;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+  }
+
+  .profile-right {
+    padding: 25px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  */
+
+/* === HERO (Index) === */
+.hero {
+  background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero .title {
+  font-size: 36px;
+  color: #0c4a6e;
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero .subtitle {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hero input {
+  padding: 12px 18px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 250px;
+  font-size: 16px;
+}
+
+.hero button {
+  background: #0c4a6e;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero button:hover {
+  background: #116a9a;
+}
+
+.weather-result {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* === FAQ PAGE === */
+.faq-page {
+  background-color: #f7f9fb;
+  padding: 60px 20px;
+}
+
+.faq-page h1 {
+  text-align: center;
+  color: #0c4a6e;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.faq-intro {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: #0c4a6e;
+  color: white;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover,
+.faq-question.active {
+  background: #116a9a;
+}
+
+.faq-answer {
+  background: white;
+  color: #333;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer p {
+  margin: 15px 0;
+  line-height: 1.6;
+}

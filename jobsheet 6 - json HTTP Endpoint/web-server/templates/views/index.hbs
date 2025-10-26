@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+{{>head}}
+<body>
+  {{>header}}
+
+  <section class="hero">
+    <div class="container">
+      <h1 class="title">🌤️ Selamat Datang di Aplikasi Cek Cuaca</h1>
+      <p class="subtitle">Temukan informasi cuaca terkini di kota mana pun secara instan.</p>
+
+      <form id="weather-form">
+        <input type="text" placeholder="Masukkan nama kota..." required>
+        <button type="submit">Cari Cuaca</button>
+      </form>
+
+      <div class="weather-result">
+        <p id="pesan-1"></p>
+        <p id="pesan-2"></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="/js/app.js"></script>
+  {{>footer}}
+</body>
+</html>

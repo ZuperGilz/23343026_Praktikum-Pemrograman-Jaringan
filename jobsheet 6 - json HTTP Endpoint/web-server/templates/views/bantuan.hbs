@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+{{>head}}
+<body>
+  {{>header}}
+
+  <section class="faq-page">
+    <div class="container">
+      <h1>💡 Frequently Asked Questions</h1>
+      <p class="faq-intro">Temukan jawaban untuk pertanyaan yang sering diajukan tentang aplikasi Cek Cuaca.</p>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">🔍 Bagaimana cara menggunakan aplikasi ini?</button>
+          <div class="faq-answer">
+            <p>Ketik nama kota pada kolom pencarian di halaman utama, lalu tekan tombol "Cari Cuaca".
+               Aplikasi akan menampilkan kondisi cuaca terkini secara otomatis.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">🌦️ Dari mana data cuaca diperoleh?</button>
+          <div class="faq-answer">
+            <p>Data diambil dari layanan <strong>Open-Meteo API</strong> yang menyediakan informasi cuaca terbuka
+               dan bebas digunakan tanpa API key.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">📱 Apakah aplikasi ini bisa diakses lewat HP?</button>
+          <div class="faq-answer">
+            <p>Tentu! Aplikasi ini responsif dan dapat diakses dengan mudah melalui perangkat mobile.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">🧭 Mengapa lokasi tidak ditemukan?</button>
+          <div class="faq-answer">
+            <p>Pastikan nama kota diketik dengan benar. Jika masih tidak ditemukan, coba gunakan nama kota besar terdekat
+               seperti "Padang", "Jakarta", atau "Medan".</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{>footer}}
+
+  <script>
+    // Script interaktif FAQ
+    const questions = document.querySelectorAll(".faq-question");
+    questions.forEach(q => {
+      q.addEventListener("click", () => {
+        const answer = q.nextElementSibling;
+        q.classList.toggle("active");
+        if (answer.style.maxHeight) {
+          answer.style.maxHeight = null;
+        } else {
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
